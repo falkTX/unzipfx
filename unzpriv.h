@@ -617,7 +617,7 @@
 #if (defined(UNIX) && defined(_FILE_OFFSET_BITS) && (_FILE_OFFSET_BITS == 64))
 #  define Z_OFF_T off_t /* 64bit offsets to support 2GB < zipfile size < 4GB */
 #else
-#  define Z_OFF_T long
+#  define Z_OFF_T long long
 #endif
 #endif
 
