@@ -3,16 +3,16 @@
 #include <string.h>
 
 #ifdef WIN32
-#  include <windows.h>
+# include <windows.h>
 #endif
 
 #include "appDetails.h"
 
 #define CMD_BUF_LEN 1024
 
-int    sfx_app_argc = 0;
-char** sfx_app_argv = NULL;
-char   sfx_tmp_path[512] = { 0 };
+static int    sfx_app_argc = 0;
+static char** sfx_app_argv = NULL;
+static char   sfx_tmp_path[512] = { 0 };
 
 void sfx_app_set_args(int argc, char** argv)
 {
